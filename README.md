@@ -16,9 +16,6 @@ Use the following command to clean a CSV file:
 python CSV_Cleaner.py <input_file> <output_file>
 Replace <input_file> with the path to your source CSV file and <output_file> with the desired output path.
 
-Example:
-python CSV_Cleaner.py "C:\Users\Kai\Documents\RAW.csv" "C:\Users\Kai\Documents\CLEANED.csv"
-
 Requirements:
 Python 3.x
 No external dependencies (uses built-in Python libraries)
