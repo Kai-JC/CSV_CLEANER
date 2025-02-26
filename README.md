@@ -13,7 +13,9 @@ Open a Terminal
 Navigate to the directory where the script is saved.
 Run the Script
 Use the following command to clean a CSV file:
+
 python CSV_Cleaner.py <input_file> <output_file>
+
 Replace <input_file> with the path to your source CSV file and <output_file> with the desired output path.
 
 Requirements:
