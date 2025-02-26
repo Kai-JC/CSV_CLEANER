@@ -1,9 +1,15 @@
 import csv
 import re
+import sys
 
-# File paths (update if needed)
-input_file = r"C:\Users\Kai\Documents\RAW.csv"
-output_file = r"C:\Users\Kai\Documents\CLEANED.csv"
+# Ensure correct number of arguments are provided
+if len(sys.argv) != 3:
+    print("Usage: python script.py <input_file> <output_file>")
+    sys.exit(1)
+
+# Get file paths from command-line arguments
+input_file = sys.argv[1]
+output_file = sys.argv[2]
 
 # Function to clean unwanted characters and fix line endings
 def clean_text(text):
@@ -30,4 +36,3 @@ with open(input_file, "r", newline="", encoding="utf-8", errors="ignore") as inf
         writer.writerow(cleaned_row)
 
 print(f"CSV cleaned successfully! Saved as: {output_file} (with Unix line endings)")
-
